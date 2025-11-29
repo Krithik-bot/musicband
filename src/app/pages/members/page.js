@@ -5,12 +5,23 @@ export default function Home() {
   return (
     <>
       <nav className={styles.navbar}>
-        <h2 className={styles.bandname}>Wu-Tang Clan</h2>
-        <div>
+        <h2 className={styles.bandname}>The Jackson Five</h2>
+
+        <Link href="/pages/discography">
           <button className={styles.navbutton}>Discography</button>
+        </Link>
+
+        <Link href="/pages/members">
+          <button className={styles.navbutton}>Band Members</button>
+        </Link>
+
+        <Link href="/pages/music-albums">
           <button className={styles.navbutton}>Music Albums</button>
+        </Link>
+
+        <Link href="/pages/about-me">
           <button className={styles.navbutton}>About Me</button>
-        </div>
+        </Link>
       </nav>
 
       <main className={styles.main}>

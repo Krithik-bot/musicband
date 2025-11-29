@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -6,6 +7,10 @@ export default function Home() {
     <>
       <nav className={styles.navbar}>
         <h2 className={styles.bandname}>The Jackson Five</h2>
+
+        <Link href="../..">
+          <button className={styles.navbutton}>Home Page</button>
+        </Link>
 
         <Link href="/pages/discography">
           <button className={styles.navbutton}>Discography</button>

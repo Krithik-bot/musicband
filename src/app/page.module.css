@@ -154,6 +154,12 @@ a.secondary {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbutton:hover {
+    background-color: #666;
+    transform: scale(1.05);  
   }
 
   .bandname {

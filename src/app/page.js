@@ -8,6 +8,10 @@ export default function Home() {
       <nav className={styles.navbar}>
         <h2 className={styles.bandname}>The Jackson Five</h2>
 
+        <Link href="../..">
+          <button className={styles.navbutton}>Home Page</button>
+        </Link>
+
         <Link href="/pages/discography">
           <button className={styles.navbutton}>Discography</button>
         </Link>
@@ -24,6 +28,7 @@ export default function Home() {
           <button className={styles.navbutton}>About Me</button>
         </Link>
       </nav>
+
 
       <main className={styles.main}>
         <h1>Welcome to the Band-Website</h1>

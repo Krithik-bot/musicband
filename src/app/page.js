@@ -1,4 +1,4 @@
-import Image from "next/image"; 
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -28,26 +28,29 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Welcome to the Band-Website</h1>
         <p>
-          The Jackson Five war eine Musikgruppe in den 1960/70er Jahre aus fünf Brüdern: 
-          Jackie, Tito, Jermaine, Marlon und Michael Jackson.
+          The Jackson Five war eine Musikgruppe in den 1960/70er Jahre aus fünf
+          Brüdern: Jackie, Tito, Jermaine, Marlon und Michael Jackson.
         </p>
-
+      <div className={styles.imageRow}>
         <Image
           src="/assets/The-Jackson-5-1970-performing.webp"
           alt="Jackson Five Band Photo"
-          width={550} 
-          height={0} 
+          width={550}
+          height={0}
           style={{ height: "auto" }}
+          className={styles.leftimage}
         />
 
         <Image
           src="/assets/jacksons5.jpg"
           alt="Young Michael Jackson"
-          width={300} 
-          height={0} 
+          width={950}
+          height={0}
           style={{ height: "auto" }}
-          className={styles.bandimage}
+          className={styles.rightimage}
         />
+      </div>
+
       </main>
     </>
   );

@@ -140,30 +140,48 @@ a.secondary {
   }
 
   .navbar {
-    background-color: black;
-    height: 70px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
+  background-color: black;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
 
   .navbutton {
-      color: white;
-      background-color: #444;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
+    color: white;
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
 
-    .bandname {
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+  .bandname {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
 
-    .bandimage {
-      margin-top: 20px;
-    }
+  .imageRow {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .rightimage {
+    position: relative;
+    margin-left: 370px;
+    margin-top: -200px;
+  }
+
+  .leftimage {
+    position: relative;
+    top: 20px;
+  } 
+
+
+
 }

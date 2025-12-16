@@ -39,27 +39,19 @@ export default function Home() {
           Brüdern: Jackie, Tito, Jermaine, Marlon und Michael Jackson.
         </p>
 
-        <div className="row justify-content-center align-items-center mt-4">
-          <div className="col-md-5">
+        <div className="row justify-content-center mt-4">
+          <div className="col-md-6 col-lg-5">
             <Image
               src="/assets/The-Jackson-5-1970-performing.webp"
               alt="Jackson Five Band Photo"
-              width={550}
-              height={350}
-              className="img-fluid rounded"
-            />
-          </div>
-
-          <div className="col-md-7">
-            <Image
-              src="/assets/jacksons5.jpg"
-              alt="Young Michael Jackson"
-              width={950}
-              height={350}
-              className="img-fluid rounded"
+              width={700}
+              height={0}
+              style={{ height: "auto" }}
             />
           </div>
         </div>
+
+
       </main>
     </>
   );

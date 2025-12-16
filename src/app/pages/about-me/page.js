@@ -5,34 +5,32 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <>
-      <nav className={styles.navbar}>
-        <h2 className={styles.bandname}>The Jackson Five</h2>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <h2 className="navbar-brand mb-0">The Jackson Five</h2>
 
-        <Link href="../..">
-          <button className={styles.navbutton}>Home Page</button>
-        </Link>
+        <div className="ms-auto d-flex gap-2">
+          <Link href="../.." className="btn btn-outline-light">
+            Home Page
+          </Link>
 
-        <Link href="/pages/discography">
-          <button className={styles.navbutton}>Discography</button>
-        </Link>
+          <Link href="/pages/discography" className="btn btn-outline-light">
+            Discography
+          </Link>
 
-        <Link href="/pages/members">
-          <button className={styles.navbutton}>Band Members</button>
-        </Link>
+          <Link href="/pages/members" className="btn btn-outline-light">
+            Band Members
+          </Link>
 
-        <Link href="/pages/music-albums">
-          <button className={styles.navbutton}>Music Albums</button>
-        </Link>
+          <Link href="/pages/music-albums" className="btn btn-outline-light">
+            Music Albums
+          </Link>
 
-        <Link href="/pages/about-me">
-          <button className={styles.navbutton}>About Me</button>
-        </Link>
+          <Link href="/pages/about-me" className="btn btn-outline-light">
+            About Me
+          </Link>
+        </div>
       </nav>
-
-      <main className={styles.main}>
-        <h1>Welcome to the Band-Website</h1>
-        <p>This is the home page of my awesome Next.js application.</p>
-      </main>
     </>
   );
 }
+   

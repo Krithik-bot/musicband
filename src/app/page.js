@@ -1,61 +1,65 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./page.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
     <>
-      <nav className={styles.navbar}>
-        <h2 className={styles.bandname}>The Jackson Five</h2>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <h2 className="navbar-brand mb-0">The Jackson Five</h2>
 
-        <Link href="../..">
-          <button className={styles.navbutton}>Home Page</button>
-        </Link>
+        <div className="ms-auto d-flex gap-2">
+          <Link href="../.." className="btn btn-outline-light">
+            Home Page
+          </Link>
 
-        <Link href="/pages/discography">
-          <button className={styles.navbutton}>Discography</button>
-        </Link>
+          <Link href="/pages/discography" className="btn btn-outline-light">
+            Discography
+          </Link>
 
-        <Link href="/pages/members">
-          <button className={styles.navbutton}>Band Members</button>
-        </Link>
+          <Link href="/pages/members" className="btn btn-outline-light">
+            Band Members
+          </Link>
 
-        <Link href="/pages/music-albums">
-          <button className={styles.navbutton}>Music Albums</button>
-        </Link>
+          <Link href="/pages/music-albums" className="btn btn-outline-light">
+            Music Albums
+          </Link>
 
-        <Link href="/pages/about-me">
-          <button className={styles.navbutton}>About Me</button>
-        </Link>
+          <Link href="/pages/about-me" className="btn btn-outline-light">
+            About Me
+          </Link>
+        </div>
       </nav>
 
+      <main className="container text-center mt-5">
+        <h1> <b>Welcome to the Band-Website</b></h1>
 
-      <main className={styles.main}>
-        <h1>Welcome to the Band-Website</h1>
-        <p>
+        <p className="mt-3">
           The Jackson Five war eine Musikgruppe in den 1960/70er Jahre aus fünf
           Brüdern: Jackie, Tito, Jermaine, Marlon und Michael Jackson.
         </p>
-      <div className={styles.imageRow}>
-        <Image
-          src="/assets/The-Jackson-5-1970-performing.webp"
-          alt="Jackson Five Band Photo"
-          width={550}
-          height={0}
-          style={{ height: "auto" }}
-          className={styles.leftimage}
-        />
 
-        <Image
-          src="/assets/jacksons5.jpg"
-          alt="Young Michael Jackson"
-          width={950}
-          height={0}
-          style={{ height: "auto" }}
-          className={styles.rightimage}
-        />
-      </div>
+        <div className="row justify-content-center align-items-center mt-4">
+          <div className="col-md-5">
+            <Image
+              src="/assets/The-Jackson-5-1970-performing.webp"
+              alt="Jackson Five Band Photo"
+              width={550}
+              height={350}
+              className="img-fluid rounded"
+            />
+          </div>
 
+          <div className="col-md-7">
+            <Image
+              src="/assets/jacksons5.jpg"
+              alt="Young Michael Jackson"
+              width={950}
+              height={350}
+              className="img-fluid rounded"
+            />
+          </div>
+        </div>
       </main>
     </>
   );

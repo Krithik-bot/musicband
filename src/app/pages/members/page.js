@@ -5,34 +5,97 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <>
-      <nav className={styles.navbar}>
-        <h2 className={styles.bandname}>The Jackson Five</h2>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <h2 className="navbar-brand mb-0">The Jackson Five</h2>
 
-        <Link href="../..">
-          <button className={styles.navbutton}>Home Page</button>
-        </Link>
+        <div className="ms-auto d-flex gap-2">
+          <Link href="../.." className="btn btn-outline-light">
+            Home Page
+          </Link>
 
-        <Link href="/pages/discography">
-          <button className={styles.navbutton}>Discography</button>
-        </Link>
+          <Link href="/pages/discography" className="btn btn-outline-light">
+            Discography
+          </Link>
 
-        <Link href="/pages/members">
-          <button className={styles.navbutton}>Band Members</button>
-        </Link>
+          <Link href="/pages/members" className="btn btn-outline-light">
+            Band Members
+          </Link>
 
-        <Link href="/pages/music-albums">
-          <button className={styles.navbutton}>Music Albums</button>
-        </Link>
+          <Link href="/pages/music-albums" className="btn btn-outline-light">
+            Music Albums
+          </Link>
 
-        <Link href="/pages/about-me">
-          <button className={styles.navbutton}>About Me</button>
-        </Link>
+          <Link href="/pages/about-me" className="btn btn-outline-light">
+            About Me
+          </Link>
+        </div>
       </nav>
-
-      <main className={styles.main}>
-        <h1>Band Members</h1>
-        <p>This is the home page of my awesome Next.js application.</p>
-      </main>
     </>
   );
+
+   
+      <main className={styles.main}>
+        <h1><u>Members of the Jackson Five</u></h1>
+        <br/>
+        <br/>       
+        <br/>
+        <h3>Member 1: Jackie Jackson</h3>
+
+        <Image
+          src="/assets/jackie-jackson_blawhi.jpg"
+          alt="The Jackson Five"
+          width={600}
+          height= {0}
+          style={{ height: "auto" }}
+          className={styles.leftImage}
+        />
+
+
+        <br/>
+        <br/>
+        <h3>Member 2: Tito Jackson</h3>
+        <Image
+          src="/assets/tito-jackson_blawhi.jpg"
+          alt="The Jackson Five"
+          width={600}
+          height= {0}
+          style={{ height: "auto" }}
+          className={styles.leftImage}
+        />
+        <br/>
+        <br/>
+        <h3>Member 3: Jermaine Jackson</h3>
+        <Image
+          src="/assets/jermaine-jackson_blawhi.jpg"
+          alt="The Jackson Five"
+          width={600}
+          height= {0}
+          style={{ height: "auto" }}
+          className={styles.leftImage}
+        />
+        <br/>
+        <br/>
+        <h3>Member 4: Marlon Jackson</h3>
+        <Image
+          src="/assets/marlon-jackson_blawhi.jpg"
+          alt="The Jackson Five" 
+          width={600}
+          height= {0}
+          style={{ height: "auto" }}
+          className={styles.leftImage}
+        />
+        <br/>
+        <br/>
+        <h3>Member 5: Michael Jackson</h3>
+        <Image
+          src="/assets/micheal-jackson_blawhi.jpg"
+          alt="The Jackson Five"
+          width={600}
+          height= {0}
+          style={{ height: "auto" }}
+          className={styles.leftImage}
+        />
+      </main>
 }
+  
+

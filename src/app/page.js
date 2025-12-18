@@ -32,14 +32,16 @@ export default function Home() {
       </nav>
 
       <main className="container text-center mt-5">
-        <h1> <b>Welcome to the Band-Website</b></h1>
+        <h1><b>Welcome to the Band-Website</b></h1>
+     
 
         <p className="mt-3">
           The Jackson Five war eine Musikgruppe in den 1960/70er Jahre aus fünf
           Brüdern: Jackie, Tito, Jermaine, Marlon und Michael Jackson.
         </p>
+      </main>
 
-        <div className="row justify-content-center mt-4">
+      <div className="row justify-content-center mt-3 me-5">
           <div className="col-md-6 col-lg-5">
             <Image
               src="/assets/The-Jackson-5-1970-performing.webp"
@@ -52,7 +54,6 @@ export default function Home() {
         </div>
 
 
-      </main>
     </>
   );
 }

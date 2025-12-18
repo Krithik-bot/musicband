@@ -1,6 +1,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export default function Home() {
   return (
@@ -38,18 +40,7 @@ export default function Home() {
       </main>
 
       <div className="container mt-4">
-
-        <div className="row justify-content-center mt-4">
-            <div className="col-md-6 col-lg-5">
-              <Image
-                src="/assets/members/jackie-jackson_blawhi.jpg"
-                alt="Jackson Five Band Photo"
-                width={700}
-                height={0}
-                style={{ height: "auto" }}
-                className="mx-auto d-block"
-              />
-            </div>
+        <div className="row align-items-center mb-5">
 
             <div className="col-md-8">
               <h2>Member 1: Jackie Jackson</h2>
@@ -66,10 +57,21 @@ export default function Home() {
                 Jackie Jackson gilt als bodenständiges und engagiertes Mitglied der Jackson-Familie, das wesentlich zum Erfolg und Zusammenhalt der Gruppe beigetragen hat.
               </p>
             </div>
+            
+            <div className="col-md-4 text-center">
+              <Image
+                src="/assets/members/jackie-jackson_blawhi.jpg"
+                alt="Jackson Five Band Photo"
+                width={450}
+                height={0}
+                style={{ height: "auto" }}
+                className="mx-auto d-block"
+              />
+            </div>
         </div>
 
-        <div className="row justify-content-center mt-4">
-            <div className="col-md-6 col-lg-5">
+        <div className="row align-items-center mb-5">
+            <div className="col-md-8" >
               <Image
                 src="/assets/members/jermaine-jackson_blawhi.jpg"
                 alt="Jackson Five Band Photo"
@@ -80,7 +82,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-md-8">
+            <div className="col-md-4 text-center">
               <h2>Member 2: Jermaine Jackson</h2>
               <p>
                 Jermaine Jackson wurde am 11. Dezember 1954 in Gary, Indiana, geboren und ist ein US-amerikanischer Sänger, Bassist und Songwriter. Er war eines der Gründungsmitglieder der Jackson Five und übernahm in der Gruppe häufig Lead- und Background-Gesang. Besonders auffällig war seine warme, soulige Stimme, die viele Songs der Band prägte.
@@ -98,12 +100,12 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="row justify-content-center mt-4">
-            <div className="col-md-6 col-lg-5">
+        <div className="row align-items-center mb-5">
+          <div className="col-md-4 text-center">
               <Image
                 src="/assets/members/marlon-jackson_blawhi.jpg"
                 alt="Jackson Five Band Photo"
-                width={700}
+                width={400}
                 height={0}
                 style={{ height: "auto" }}
                 className="mx-auto d-block"
@@ -127,19 +129,10 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="row justify-content-center mt-4">
-            <div className="col-md-6 col-lg-5">
-              <Image
-                src="/assets/members/micheal-jackson_blawhi.jpg"
-                alt="Jackson Five Band Photo"
-                width={700}
-                height={0}
-                style={{ height: "auto" }}
-                className="mx-auto d-block"
-              />
-            </div>
 
-            <div className="col-md-8">
+
+        <div className="row align-items-center mb-5">
+            <div className="col-md-4 text-center">
               <h2>Member 4: Michael Jackson</h2>
               <p>
                 Michael Jackson, mit vollem Namen Michael Joseph Jackson, wurde am 29. August 1958 in Gary, Indiana, geboren und gilt als einer der bedeutendsten Künstler der Musikgeschichte. Er wurde weltweit als „King of Pop“ bekannt. Seine Karriere begann bereits im Kindesalter als jüngstes Mitglied der Jackson Five, wo er schnell durch seine außergewöhnliche Stimme, sein Talent und seine Bühnenpräsenz auffiel.
@@ -154,12 +147,10 @@ export default function Home() {
                 Michael Jackson war zudem für seine einzigartigen Tanzbewegungen, insbesondere den Moonwalk, bekannt. Er beeinflusste Generationen von Musikern, Tänzern und Künstlern weltweit. Trotz seines enormen Erfolgs war sein Leben von Kontroversen und persönlichen Herausforderungen geprägt. Michael Jackson verstarb am 25. Juni 2009, doch sein musikalisches Erbe lebt bis heute weiter.
               </p>
             </div>
-        </div>
 
-        <div className="row justify-content-center mt-4">
-            <div className="col-md-6 col-lg-5">
+            <div className="col-md-8" >
               <Image
-                src="/assets/members/tito-jackson_blawhi.jpg"
+                src="/assets/members/micheal-jackson_blawhi.jpg"
                 alt="Jackson Five Band Photo"
                 width={700}
                 height={0}
@@ -167,31 +158,37 @@ export default function Home() {
                 className="mx-auto d-block"
               />
             </div>
-
-            <div className="col-md-8">
-              <h2>Member 5: Tito Jackson</h2>
-              <p>
-                Tito Jackson, mit bürgerlichem Namen Toriano Adaryll Jackson, wurde am 15. Oktober 1953 in Gary, Indiana, geboren. Er war Gründungsmitglied der Jackson Five und vor allem als Gitarrist der Gruppe bekannt. Tito spielte eine wichtige Rolle im musikalischen Fundament der Band und trug wesentlich zu ihrem unverwechselbaren Sound bei.
-                <br/>
-                <br/>
-                Innerhalb der Jackson Five übernahm Tito hauptsächlich Background-Gesang, während er sich instrumental auf die Gitarre konzentrierte. Sein rhythmisches Gitarrenspiel ergänzte den typischen Motown-Sound und unterstützte die eingängigen Melodien der Band. Obwohl er weniger im Vordergrund stand als Michael Jackson, war Tito ein wichtiger Bestandteil des Erfolgs der Gruppe.
-                <br/>
-                <br/>
-                Nach der Motown-Zeit setzte Tito seine Karriere mit seinen Brüdern unter dem Namen The Jacksons fort. Später widmete er sich verstärkt dem Blues, was zu mehreren Solo-Projekten führte. In den 2000er-Jahren veröffentlichte er eigene Alben und trat international als Bluesmusiker auf, wodurch er sich auch außerhalb des Familiennamens einen eigenen musikalischen Stil aufbaute.
-                <br/>
-                <br/>
-                Tito Jackson gilt als bodenständiger und leidenschaftlicher Musiker, dessen Gitarrenspiel und musikalische Hingabe maßgeblich zum Erfolg der Jackson Five beitrugen.
-            
-              </p>
-            </div>
         </div>
 
+        <div className="row align-items-center mb-5">
+          <div className="col-md-8" >
+            <Image
+              src="/assets/members/tito-jackson_blawhi.jpg"
+              alt="Jackson Five Band Photo"
+              width={750}
+              height={0}
+              style={{ height: "auto" }}
+              className="mx-auto d-block"
+            />
+          </div>
 
-
-      
+          <div className="col-md-4 text-center">
+            <h2>Member 5: Tito Jackson</h2>
+            <p>
+              Tito Jackson, mit bürgerlichem Namen Toriano Adaryll Jackson, wurde am 15. Oktober 1953 in Gary, Indiana, geboren. Er war Gründungsmitglied der Jackson Five und vor allem als Gitarrist der Gruppe bekannt. Tito spielte eine wichtige Rolle im musikalischen Fundament der Band und trug wesentlich zu ihrem unverwechselbaren Sound bei.
+              <br/>
+              <br/>
+              Innerhalb der Jackson Five übernahm Tito hauptsächlich Background-Gesang, während er sich instrumental auf die Gitarre konzentrierte. Sein rhythmisches Gitarrenspiel ergänzte den typischen Motown-Sound und unterstützte die eingängigen Melodien der Band. Obwohl er weniger im Vordergrund stand als Michael Jackson, war Tito ein wichtiger Bestandteil des Erfolgs der Gruppe.
+              <br/>
+              <br/>
+              Nach der Motown-Zeit setzte Tito seine Karriere mit seinen Brüdern unter dem Namen The Jacksons fort. Später widmete er sich verstärkt dem Blues, was zu mehreren Solo-Projekten führte. In den 2000er-Jahren veröffentlichte er eigene Alben und trat international als Bluesmusiker auf, wodurch er sich auch außerhalb des Familiennamens einen eigenen musikalischen Stil aufbaute.
+              <br/>
+              <br/>
+              Tito Jackson gilt als bodenständiger und leidenschaftlicher Musiker, dessen Gitarrenspiel und musikalische Hingabe maßgeblich zum Erfolg der Jackson Five beitrugen.
+            </p>
+          </div>
+        </div>
       </div>
-
-
     </>
   );
 }

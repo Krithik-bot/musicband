@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (
@@ -32,28 +32,28 @@ export default function Home() {
       </nav>
 
       <main className="container text-center mt-5">
-        <h1><b>Welcome to the Band-Website</b></h1>
-     
+        <h1>
+          <b>Welcome to the Band-Website</b>
+        </h1>
 
-        <p className="mt-3">
+        <p className="mt-3 fs-5">
           The Jackson Five war eine Musikgruppe in den 1960/70er Jahre aus fünf
           Brüdern: Jackie, Tito, Jermaine, Marlon und Michael Jackson.
         </p>
       </main>
 
       <div className="row justify-content-center mt-3 me-5">
-          <div className="col-md-6 col-lg-5">
-            <Image
-              src="/assets/The-Jackson-5-1970-performing.webp"
-              alt="Jackson Five Band Photo"
-              width={700}
-              height={0}
-              style={{ height: "auto" }}
-            />
-          </div>
+        <div className="col-md-6 col-lg-5">
+          <Image
+            src="/assets/The-Jackson-5-1970-performing.webp"
+            alt="Jackson Five Band Photo"
+            width={700}
+            height={0}
+            style={{ height: "auto" }}
+            className="border p-1 bg-dark"
+          />
         </div>
-
-
+      </div>
     </>
   );
 }

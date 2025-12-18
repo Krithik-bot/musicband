@@ -27,7 +27,7 @@ export default function Home() {
           </Link>
 
           <Link href="/pages/about-me" className="btn btn-outline-light">
-            About Me
+            Contact
           </Link>
         </div>
       </nav>
